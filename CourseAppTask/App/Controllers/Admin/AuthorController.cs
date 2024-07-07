@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Service.DTOs.Admin.Authors;
 using Service.Services.Interfaces;
 
 namespace App.Controllers.Admin
 {
+    [Authorize]
     public class AuthorController : BaseController
     {
         private readonly IAuthorService _authorService;

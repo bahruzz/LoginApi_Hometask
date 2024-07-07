@@ -4,7 +4,7 @@ using Service.Services.Interfaces;
 
 namespace App.Controllers.Admin
 {
-    //[Authorize]
+    [Authorize]
     public class AccountController : BaseController
     {
 
